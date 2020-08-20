@@ -42,6 +42,8 @@ namespace WindowsFormsDemo
             da.Fill(dt);
             dataGridView1.DataSource = ds;
 
+            //DataRow
+
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 var colRoleID = dt.Rows[i]["RoleID"];
