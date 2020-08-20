@@ -42,6 +42,11 @@ namespace WindowsFormsDemo
             da.Fill(dt);
             dataGridView1.DataSource = ds;
 
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                var colRoleID = dt.Rows[i]["RoleID"];
+            }
+            
             //使用DataSet繫結時，必須同時指明DateMember
             //this.dataGridView1.DataSource = ds;
             //this.dataGridView1.DataMember = "ds";
